@@ -5,10 +5,18 @@
 
 This [Opam] repository supports building components in the XenServer
 toolstack implemented in [OCaml].  You can add this Git repository as a
-remote Opam repository:
+remote Opam repository (with some restriction):
 
   ```
   opam repo add xs-opam https://github.com/xapi-project/xs-opam.git
+  ```
+
+or (this will lift the restrictions on xenctrl):
+
+  ```
+  git clone https://github.com/xapi-project/xs-opam.git
+  cd xs-opam && sh into_repo.sh && cd ..
+  opam repo add xs-opam xs-opam/
   ```
 
 ## Layout of This Repository
