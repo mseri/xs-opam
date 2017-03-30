@@ -9,6 +9,7 @@ build: [
 ]
 install: [
  	["ocaml" "setup.ml" "-install"]
+  [make "install"]
 ]
 remove: [
         ["oasis" "setup"]
