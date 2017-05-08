@@ -21,12 +21,13 @@ remove: [
 ]
 depends: [
   "oasis" {build}
+  "cppo" {build}
   "ocamlfind"
   "type_conv" {>= "108.07.01"}
   "ppx_deriving"
   "cow"
   "xmlm"
-  "lwt"
+  "lwt" {< "3.0.0"}
   "cmdliner"
   "rresult"
   "async"
