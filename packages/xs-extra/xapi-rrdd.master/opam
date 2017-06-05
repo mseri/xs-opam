@@ -20,7 +20,7 @@ depends: [
   "xapi-idl"
   "xapi-libs-transitional"
   "xapi-inventory"
-  "xapi-stdext"
+  "stdext"
   "xapi-forkexecd"
   "xenctrl"
   "xenstore_transport"

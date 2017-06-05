@@ -17,7 +17,7 @@ remove: [
 available: [ os = "linux" ]
 depends: [
   "ocamlfind"
-  "xapi-stdext"
+  "stdext"
   "xapi-forkexecd"
   "oasis" {build}
 ]

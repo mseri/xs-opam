@@ -37,7 +37,7 @@ depends: [
   "ounit"
   "rpc"
   "ssl"
-  "xapi-stdext"
+  "stdext"
   "xapi-tapctl"
   "xenctrl"
   "xenstore"

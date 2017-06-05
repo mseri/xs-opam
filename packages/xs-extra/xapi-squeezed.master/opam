@@ -10,7 +10,7 @@ remove: [
     ["ocamlfind" "remove" "squeeze"]
 ]
 depends: [
-  "xapi-stdext"
+  "stdext"
   "ocamlfind"
   "uuidm"
   "cohttp" {< "0.22.0"}

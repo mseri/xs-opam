@@ -7,6 +7,6 @@ build: [
 remove: ["make" "PREFIX=%{prefix}%" "uninstall"]
 depends: [
   "xapi-rrd"
-  "xapi-stdext"
+  "stdext"
   "xmlm"
 ]

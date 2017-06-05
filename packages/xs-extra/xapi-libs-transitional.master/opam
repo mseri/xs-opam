@@ -22,7 +22,7 @@ remove: [
 os: ["linux"]
 depends: [
   "ocamlfind"
-  "xapi-stdext"
+  "stdext"
   "xmlm"
   "xapi-forkexecd"
   "rpc"

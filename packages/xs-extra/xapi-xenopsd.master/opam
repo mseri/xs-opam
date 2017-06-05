@@ -28,7 +28,7 @@ depends: [
   "rpc"
   "xapi-idl"
   "xapi-forkexecd"
-  "xapi-stdext"
+  "stdext"
   "fd-send-recv"
   "sexplib"
   "xenstore"

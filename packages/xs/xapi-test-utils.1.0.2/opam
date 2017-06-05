@@ -12,6 +12,6 @@ depends: [
   "oasis" {build}
   "ounit"
   "ocamlfind" {build}
-  "xapi-stdext"
+  "stdext"
 ]
 tags: [ "org:xapi-project" ]

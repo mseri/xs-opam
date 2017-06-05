@@ -15,7 +15,7 @@ remove: [
 ]
 depends: [
   "oasis" {build}
-  "xapi-stdext"
+  "stdext"
   "xapi-libs-transitional"
   "xenctrl"
   "xenstore"

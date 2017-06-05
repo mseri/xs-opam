@@ -24,7 +24,7 @@ depends: [
   "rpc"
   "fd-send-recv"
   "uuidm"
-  "xapi-stdext"
+  "stdext"
   "re"
   "xapi-idl"
 ]
