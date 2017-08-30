@@ -1,6 +1,7 @@
 opam-version: "1"
 maintainer: "xen-api@lists.xen.org"
 build: [
+    ["oasis" "setup"]
   [make]
   [make "PREFIX=%{prefix}%" "install"]
 ]

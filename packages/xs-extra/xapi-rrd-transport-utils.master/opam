@@ -5,14 +5,8 @@ homepage: "https://github.com/xapi-project/rrd-transport"
 dev-repo: "https://github.com/xapi-project/rrd-transport"
 bug-reports: "https://github.com/xapi-project/rrd-transport"
 build: [[ "jbuilder" "build" "-p" name "-j" jobs ]]
-build-test: ["jbuilder" "runtest" "-p" name]
 depends: [
   "jbuilder" {build & >= "1.0+beta10"}
-  "base-bigarray"
-  "cstruct" {< "3.0.0"}
-  "crc"
-  "stringext"
-  "xapi-idl" {>= "1.0.0"}
-  "xapi-rrd" {>= "1.0.0"}
-  "xen-gnt"
+  "cmdliner"
+  "xapi-rrd-transport"
 ]
