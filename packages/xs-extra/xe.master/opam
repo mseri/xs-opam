@@ -10,6 +10,6 @@ build: [[ "jbuilder" "build" "-p" name ]]
 depends: [
   "jbuilder" {build & >= "1.0+beta11"}
   "stdext"
-  "stunnel"
   "xapi-cli-protocol"
+  "xapi-libs-transitional"
 ]
