@@ -13,7 +13,6 @@ depends: [
   "ppx_deriving_rpc"
   "rpclib"
   "stdext"
-  "threads"
   "xapi-consts"
   "xapi-database"
   "xenstore"

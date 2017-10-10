@@ -13,7 +13,6 @@ depends: [
   "rpclib"
   "ppx_sexp_conv"
   "sexpr"
-  "threads"
   "http-svr"
   "gzip"
   "uuid"
