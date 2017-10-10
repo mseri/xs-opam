@@ -9,12 +9,8 @@ build: [[ "jbuilder" "build" "-p" name ]]
 
 depends: [
   "jbuilder" {build & >= "1.0+beta11"}
-  "ppx_deriving_rpc"
-  "rpclib"
+  "rpc"
   "ppx_sexp_conv"
-  "sexpr"
-  "http-svr"
-  "gzip"
-  "uuid"
   "xapi-idl"
+  "xapi-libs-transitional"
 ]
