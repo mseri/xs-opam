@@ -9,7 +9,7 @@ build: [[ "jbuilder" "build" "-p" name ]]
 build-test: [[ "jbuilder" "runtest" "-p" name "-j" jobs ]]
 
 depends: [
-  "jbuilder" {build & >= "v1.0+beta11"}
+  "jbuilder" {build & >= "1.0+beta11"}
   "cdrom"
   "fd-send-recv"
   "mustache"

@@ -8,7 +8,7 @@ dev-repo: "https://github.com/xapi-project/xen-api.git"
 build: [[ "jbuilder" "build" "-p" name ]]
 
 depends: [
-  "jbuilder" {build & >= "v1.0+beta11"}
+  "jbuilder" {build & >= "1.0+beta11"}
   "xapi-datamodel"
   "xapi-types"
 ]
