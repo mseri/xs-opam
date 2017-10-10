@@ -16,5 +16,5 @@ depends: [
   "http-svr"
   "gzip"
   "uuid"
-  "xcp"
+  "xapi-idl"
 ]
