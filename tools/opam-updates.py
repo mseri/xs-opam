@@ -230,6 +230,9 @@ def parse_args_or_exit(argv=None):
                         action="store_true",
                         help="Ignore the upstream changed packages. This is "
                         "often unreliable in opam 1.2.*.")
+    parser.add_argument("--ignore-travis-opam", dest="ignore_to",
+                        action="store_true",
+                        help="Ignore checking the status of travis-opam.")
 
     args = parser.parse_args(argv)
 
@@ -272,9 +275,14 @@ def main(argv=None):
         if "- install" in row and "xenctrl" not in row
     ]
 
+    if args.ignore_to:
+        upgrades = [upgrade for upgrade in upgrades if upgrade.name != "travis-opam"]
+        updates = [update for update in updates if update.name != "travis-opam"]
+        new_packages = [np for np in new_packages if np.name != "travis-opam"]
+
     print_update_actions(upgrades, updates, new_packages)
 
-    if not args.xs_opam:
+    if args.xs_opam is None:
         sys.exit(0)
 
     # Passed xs-opam path as argument, perform update
@@ -333,7 +341,7 @@ def main(argv=None):
             os.makedirs(pkg.path(upstream_p))
             update_files(session, args.auth, pkg, upstream_p)
 
-    print("Done!")
+        print("Done!")
 
 
 if __name__ == "__main__":
