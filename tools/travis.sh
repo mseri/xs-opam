@@ -38,6 +38,11 @@ else
     XS="$(pkg xs)"
 fi
 
+if [ "${OCAML_VERSION}" = "4.06.0" ]; then
+   opam switch set 4.06.0+default-unsafe-string
+   eval $(opam config env)
+fi
+
 if [ ! "${BASE_REMOTE}" = "" ]; then
     opam remote remove default
     opam remote add base "$BASE_REMOTE"
