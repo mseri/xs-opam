@@ -18,6 +18,7 @@ depends: [
   "nbd"
   "opasswd"
   "ounit"
+  "pci"
   "rpc"
   "sha"
   "ssl"
