@@ -3,8 +3,8 @@ sudo: false
 services:
   - docker
 script:
-  - docker pull xenserver/xs-opam:latest
+  - docker pull xenserver/xs-opam:latest_extra
   - echo "GH_USER=$GH_USER" > env.list
   - echo "GH_TOKEN=$GH_TOKEN" >> env.list
-  - docker run --rm -itv $PWD:/mnt -w /mnt --env-file env.list xenserver/xs-opam:latest bash ./opam-update.sh
+  - docker run --rm -itv $PWD:/mnt -w /mnt --env-file env.list xenserver/xs-opam:latest_extra bash ./opam-update.sh
 
